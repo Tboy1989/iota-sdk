@@ -10,8 +10,6 @@ import (
 )
 
 func TestDefaultHead_ContainsAndroidAppConfig(t *testing.T) {
-	t.Helper()
-
 	var out bytes.Buffer
 	err := DefaultHead().Render(context.Background(), &out)
 	require.NoError(t, err)
