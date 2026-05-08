@@ -1,0 +1,17 @@
+{
+  "name": "IOTA SDK",
+  "short_name": "IOTA",
+  "description": "IOTA SDK multi-tenant business platform",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

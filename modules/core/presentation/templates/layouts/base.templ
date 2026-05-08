@@ -9,6 +9,7 @@ import (
 
 var (
 	favicon = "/assets/" + assets.HashFS.HashName("images/favicon.ico")
+	manifest = "/assets/" + assets.HashFS.HashName("images/app.webmanifest")
 
 	apexCss      = "/assets/" + assets.HashFS.HashName("css/apexcharts.css")
 	flatpickrCss = "/assets/" + assets.HashFS.HashName("css/flatpickr.css")
@@ -31,6 +32,9 @@ var (
 
 templ DefaultHead() {
 	<link rel="icon" type="image/x-icon" href={ favicon }/>
+	<link rel="manifest" href={ manifest }/>
+	<meta name="theme-color" content="#111827"/>
+	<meta name="mobile-web-app-capable" content="yes"/>
 	<link rel="stylesheet" href={ apexCss }/>
 	<link rel="stylesheet" href={ flatpickrCss }/>
 	<link rel="stylesheet" href={ mainCss }/>
